@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&family=Merriweather&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-family: 'Merriweather', serif;
+}
+
+.header {
+	width: 100%;
+	height: 10vh;
+	background-color: wheat;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1rem;
+	box-shadow: 0 5px 10px rgb(195, 177, 144);
+	position: sticky;
+	top: 0;
+}
+
+.item {
+	color: black;
+	text-decoration: none;
+	font-size: small;
+}
+
+.item:hover, .item:focus {
+	color: rgb(244, 238, 225);
+}
+
+.logo {
+	font-size: large;
+}
+
+.nav-container {
+	display: flex;
+	gap: 1.5rem;
+	/* border: 1px solid red; */
+}
+
+.nav {
+	display: none;
+	align-items: center;
+	gap: 1.5rem;
+}
+
+.search-container {
+	display: flex;
+}
+
+.search-field {
+	width: 200px;
+	height: 2rem;
+	border-radius: 1rem 0 0 1rem;
+	border: none;
+	padding: 1rem;
+}
+
+.search-btn {
+	border-radius: 0 1rem 1rem 0;
+	border: none;
+	background-color: black;
+	color: whitesmoke;
+	padding-left: 0.5rem;
+	padding-right: 0.5rem;
+	cursor: pointer;
+}
+
+.search-btn:hover, .search-btn:focus {
+	background-color: rgb(31, 31, 31);
+}
+
+.body {
+	width: 100%;
+	background-image: linear-gradient(to bottom, rgb(247, 235, 211), rgb(217, 196, 156));
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 2rem;
+	padding: 2rem;
+}
+
+.img {
+	box-shadow: 0 5px 10px rgb(195, 177, 144);
+	border-radius: 1rem;
+}
+
+.slider-container {
+	display: flex;
+	justify-content: space-between;
+	width: 50px;
+}
+
+.slider-item {
+	width: 10px;
+	height: 10px;
+	background-color: rgb(195, 177, 144);
+	border-radius: 1rem;
+}
+
+.selected {
+	background-color: rgb(107, 97, 80);
+}
+
+.grid-container {
+	display: grid;
+	grid-template-columns: auto auto auto;
+}
+
+.grid-container > p {
+	padding: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+	.img {
+		width: 600px;
+		height: auto;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.nav {
+		display: flex;
+	}
+
+	.img {
+		width: 650px;
+		height: auto;
+	}
+
+	.body {
+		padding: 2rem 10rem 2rem 10rem;
+	}
+}
